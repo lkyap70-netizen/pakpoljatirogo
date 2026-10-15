@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PAKPOL - Polsek Jatirogo</title>
+<style>
+:root{--bg:#eaeff8;--card:#fff;--ink:#14213d;--mut:#66728a;--line:#d3dbee;--acc:#f4f7fd;--navy:#0b1f4d;--gold:#f2b705;--blue:#1d3a8a;--fd:Bahnschrift,"DIN Alternate","Arial Narrow",Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1122;--card:#131c33;--ink:#e8eefc;--mut:#98a5c2;--line:#263555;--acc:#18233f}}
+:root[data-theme="dark"]{--bg:#0a1122;--card:#131c33;--ink:#e8eefc;--mut:#98a5c2;--line:#263555;--acc:#18233f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink)}
+body:before{content:"";position:fixed;top:0;left:0;right:0;height:env(safe-area-inset-top,0px);background:#07163a;z-index:30}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;gap:12px;padding:10px 18px;background:linear-gradient(110deg,#07163a,#0f2c78 70%,#15399b);color:#fff}
+header:after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:4px;background:repeating-linear-gradient(90deg,#d71920 0 70px,#fff 70px 74px,#1d4ed8 74px 144px,#fff 144px 148px);background-size:296px 4px;animation:bar 5s linear infinite}
+@keyframes bar{to{background-position:296px 0}}
+.em{width:44px;height:44px;border-radius:50%;background:#fff;display:grid;place-items:center;font-size:24px;box-shadow:0 0 0 3px var(--gold)}
+.b1{font:800 22px var(--fd);letter-spacing:3px}.b2{font-size:11px;opacity:.8;letter-spacing:.5px}
+header .sp{flex:1}
+header button{background:#ffffff1f;color:#fff;border:1px solid #ffffff44;border-radius:6px;padding:7px 11px;cursor:pointer;font-size:14px}
+main,#mod{max-width:1180px;margin:0 auto;padding:22px 16px 30px}
+.hero{background:linear-gradient(115deg,#07163a,#0f2c78 62%,#1b46b8);color:#fff;border-left:8px solid var(--gold);border-radius:6px;padding:22px 26px;animation:vi .5s both}
+.hero h1{font:800 28px var(--fd);margin:0 0 4px;letter-spacing:1px}.hero p{margin:0 0 14px;opacity:.85;font-size:14px}
+#q{width:100%;max-width:420px;padding:11px 14px;border:0;border-radius:6px;font-size:15px}
+.cat{margin:26px 0 10px;padding:6px 14px;background:var(--navy);color:#fff;border-left:5px solid var(--gold);font:700 13px var(--fd);letter-spacing:1px;text-transform:uppercase;display:inline-block;clip-path:polygon(0 0,100% 0,calc(100% - 12px) 100%,0 100%);padding-right:28px}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}
+.t{display:block;position:relative;text-decoration:none;color:var(--ink);background:var(--card);border:1px solid var(--line);border-left:5px solid var(--gold);border-radius:6px;padding:14px 14px 14px 64px;cursor:pointer;min-height:76px;animation:vi .5s both;transition:transform .15s,box-shadow .15s}
+.t:hover{transform:translateY(-3px);box-shadow:0 10px 20px #0b1f4d30}
+.t i{position:absolute;left:12px;top:50%;margin-top:-22px;width:44px;height:44px;border-radius:8px;background:var(--navy);display:grid;place-items:center;font-style:normal;font-size:22px}
+.t b{display:block;font:700 14.5px var(--fd)}.t span{display:block;font-size:12px;color:var(--mut);margin-top:2px}
+.t.soon{opacity:.5;cursor:default;border-left-color:var(--line)}.t.soon:hover{transform:none;box-shadow:none}
+.t em{position:absolute;right:8px;top:8px;font-style:normal;font-size:10px;font-weight:700;padding:2px 7px;border-radius:10px;background:var(--acc);color:var(--mut)}
+.t.on em{background:#1a9a4b22;color:#1a9a4b}
+@keyframes vi{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.bar{display:flex;align-items:center;gap:12px;margin-bottom:14px}.bar h2{margin:0;font:700 20px var(--fd)}
+button.p,button.o{border-radius:5px;padding:9px 14px;font-size:13.5px;font-weight:600;cursor:pointer;border:1px solid var(--blue)}
+button.p{background:var(--blue);color:#fff}button.o{background:transparent;color:var(--blue)}
+:root[data-theme="dark"] button.o{color:#9db7ff;border-color:#9db7ff}
+.mw{display:grid;grid-template-columns:minmax(280px,380px) 1fr;gap:16px;align-items:start}@media(max-width:900px){.mw{grid-template-columns:1fr}}
+.fp{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:14px}
+.fp label{display:block;font-size:12px;color:var(--mut);margin:9px 0 2px}.fp .sec{margin:16px 0 0;padding:5px 10px;background:var(--navy);color:#fff;border-left:5px solid var(--gold);font:700 12px var(--fd);letter-spacing:.8px}
+.fp input,.fp select,.fp textarea{width:100%;padding:8px;border:1px solid var(--line);border-radius:6px;background:var(--acc);color:var(--ink);font:inherit;font-size:13px}
+.fp button{margin:10px 6px 0 0}
+.wrap{overflow-x:auto}
+#paper{background:#fff;color:#000;width:215.9mm;min-height:330mm;padding:15mm 16mm 20mm 24mm;margin:0 auto;font:11pt/1.35 Arial,Helvetica,sans-serif;box-shadow:0 1px 8px #0005}
+#paper.pm{padding:0;min-height:0;width:177.9mm}
+#paper p{margin:0 0 8px;text-align:justify}#paper p.ind{text-indent:10mm}
+.kop{width:81.5mm;text-align:center;line-height:1.3;margin-bottom:8px}
+.jd{text-align:center;font-weight:700;text-decoration:underline;margin:10px 0 2px}.nm{text-align:center;margin-bottom:10px}
+.ii{border-collapse:collapse;margin:0 0 8px}.ii td{padding:1px 8px 1px 0;vertical-align:top}
+.tb{width:100%;border-collapse:collapse;font-size:10.5pt}.tb th,.tb td{border:1px solid #000;padding:3px 6px;height:9mm;vertical-align:middle}.tb th{background:#e6e6e6}.tb .c{text-align:center}
+.tb tr{page-break-inside:avoid}.sg2 span{margin-left:50%}
+.ttd{width:78mm;margin:14px 0 0 auto;text-align:center;page-break-inside:avoid}.ttd div{height:22mm}
+@page{size:215.9mm 330mm;margin:15mm 16mm 18mm 22mm}
+@media print{html,body{background:#fff!important}body:before{display:none}body>*:not(#mod){display:none!important}#mod{padding:0;max-width:none}#mod>.bar,.fp{display:none!important}.mw{display:block}.wrap{overflow:visible}#paper{box-shadow:none;width:auto;min-height:0;padding:0;margin:0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="em">&#128737;&#65039;</div><div><div class="b1">PAKPOL</div><div class="b2">POLSEK JATIROGO &middot; POLRESTA TUBAN &middot; POLDA JAWA TIMUR</div></div><div class="sp"></div><span id="dt" class="b2"></span><button id="th" title="Ganti tema">&#9728;</button></header>
+<main id="home"><div class="hero"><h1>Selamat bertugas</h1><p>Pilih menu administrasi, laporan, dan pelayanan Polsek di bawah ini.</p><input id="q" type="search" placeholder="Cari menu..." autocomplete="off"></div><div id="menus"></div></main>
+<section id="mod" hidden><div class="bar"><button class="o" id="bk">&larr; Menu</button><h2 id="mt"></h2></div><div class="mw"><div class="fp" id="fp"></div><div class="wrap"><div id="paper"></div></div></div></section>
+<script>
+function loadLib(u){var i=0;(function n(){if(i>=u.length)return;var s=document.createElement("script");s.src=u[i++];s.onerror=n;document.head.appendChild(s)})()}
+loadLib(["https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"]);
+var $=function(i){return document.getElementById(i)},H=["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"],B=["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+function E(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function nl(s){return E(s).replace(/\n/g,"<br>")}
+function st(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(x){return null}}
+function p2(n){return n<10?"0"+n:""+n}
+function today(){var n=new Date();return n.getFullYear()+"-"+p2(n.getMonth()+1)+"-"+p2(n.getDate())}
+function tg(s,w){if(!s)return"...";var d=new Date(s+"T00:00:00");return(w?H[d.getDay()]+", ":"")+d.getDate()+" "+B[d.getMonth()]+" "+d.getFullYear()}
+var PERS0="M. ARIF NUGROHO,S.H.|IPTU|82100416\nJOKO SUSANTO, S.H.|IPTU|74030466\nSUGIANTO|AIPTU|71050246\nIKA ARI.P, S.H.|AIPTU|81030633\nRETNO HARTAJI|AIPTU|69070407\nSUWIGNYO|AIPTU|83070036\nSUKAMTO|AIPDA|77010533\nROFIQUL UMAM SETIANA|BRIG.|94090247\nWIRIS ARI WIJAYA|AIPTU|78020059\nKASWADI, S.H.|AIPDA|76101071\nFAHRUL NUR CAHYO|AIPTU|81051400\nBAMBANG HIMAWAN|AIPDA|84100747\nPRIYONO|AIPTU|82020343\nYULISTIYONO|AIPTU|69070433\nKARSIMIN|BRIGPOL|93080528\nLUCKY ARDIANSYAH PUTRA||1590";
+function pers(){return st("pk_pers")||PERS0}
+function rows(t){return t.split("\n").map(function(l){return l.split("|").map(function(x){return x.trim()})}).filter(function(a){return a[0]})}
+function rk(a){return[a[1],a[2]?"NRP "+a[2]:""].filter(Boolean).join(" ")}
+function kop(){return'<div class="kop">POLRI DAERAH JAWA TIMUR<br>RESOR KOTA TUBAN<br>SEKTOR JATIROGO<br><u>Jalan Raya Barat 277 Jatirogo Tuban 62362</u></div>'}
+function jd(t,s){return'<div class="jd">'+E(t)+'</div>'+(s?'<div class="nm">'+s+'</div>':'')}
+function ttd(v){return'<div class="ttd">Jatirogo, '+tg(v.tgl)+'<br>'+E(v.jab)+'<div></div><b><u>'+E(v.nm)+'</u></b><br>'+E(v.pk)+'</div>'}
+function sec(l,t){return'<p><b>'+l+'</b></p><p>'+(t&&t.trim()?nl(t):"-")+'</p>'}
+function info(a){return'<table class="ii">'+a.map(function(r){return'<tr><td>'+r[0]+'</td><td>: '+r[1]+'</td></tr>'}).join("")+'</table>'}
+var SH=[["tgl","Tanggal dokumen","date",today],["jab","Jabatan","text","KAPOLSEK JATIROGO"],["nm","Nama","text","M. ARIF NUGROHO,S.H."],["pk","Pangkat & NRP","text","INSPEKTUR POLISI SATU NRP 82100416"]];
+var MOD={
+hadir:{t:"Daftar Hadir / Absen",f:[["jd","Judul","text","DAFTAR HADIR"],["kg","Kegiatan","text","APEL PAGI POLSEK JATIROGO"],["tk","Hari / tanggal kegiatan","date",today],["wk","Waktu","text","07.00 WIB s.d. selesai"],["tp","Tempat","text","Halaman Mapolsek Jatirogo"],["ps","Peserta (NAMA | PANGKAT | NRP, satu orang per baris)","a",pers,9]],
+btn:["Isi dari Data Personel",function(){$("f_ps").value=pers();rend()}],
+r:function(v){var R=rows(v.ps),h=kop()+jd(v.jd,E(v.kg))+info([["Hari / Tanggal",tg(v.tk,1)],["Waktu",E(v.wk)],["Tempat",E(v.tp)]]);
+h+='<table class="tb"><thead><tr><th style="width:9mm">No</th><th>Nama</th><th>Pangkat / NRP</th><th style="width:50mm">Tanda Tangan</th><th style="width:20mm">Ket.</th></tr></thead><tbody>';
+R.forEach(function(a,i){var n=i+1;h+='<tr><td class="c">'+n+'</td><td>'+E(a[0])+'</td><td>'+E(rk(a))+'</td><td class="sg2">'+(n%2?n+".":"<span>"+n+".</span>")+'</td><td></td></tr>'});
+if(!R.length)h+='<tr><td colspan="5" class="c">Belum ada peserta</td></tr>';
+return h+'</tbody></table><p style="margin-top:8px">Jumlah hadir : ........ orang</p>'+ttd(v)}},
+nota:{t:"Nota Dinas / Surat",f:[["jn","Jenis","s","NOTA DINAS",["NOTA DINAS","SURAT"]],["no","Nomor","text",""],["kl","Klasifikasi","text","BIASA"],["lm","Lampiran","text","-"],["ph","Perihal","text",""],["kp","Kepada (Yth.)","a","",2],["is","Isi (satu paragraf per baris)","a","",8],["ts","Tembusan (boleh kosong)","a","",2]],
+r:function(v){var h=kop()+(v.jn==="NOTA DINAS"?jd("NOTA DINAS"):"");
+h+='<div style="text-align:right;margin:6px 0">Jatirogo, '+tg(v.tgl)+'</div>'+info([["Nomor",E(v.no||"...")],["Klasifikasi",E(v.kl)],["Lampiran",E(v.lm)],["Perihal","<b>"+E(v.ph||"...")+"</b>"]]);
+h+='<p style="margin-top:10px">Kepada Yth.<br><b>'+nl(v.kp||"...")+'</b></p>';
+v.is.split("\n").filter(function(x){return x.trim()}).forEach(function(x){h+='<p class="ind">'+E(x)+'</p>'});
+h+=ttd(v);if(v.ts.trim())h+='<p style="margin-top:14px"><u>Tembusan:</u><br>'+nl(v.ts)+'</p>';return h}},
+piket:{t:"Laporan Harian Piket",f:[["tp","Tanggal piket","date",today],["jm","Jam piket","text","08.00 s.d. 08.00 WIB"],["pt","Petugas piket (satu per baris)","a","",3],["lp","Laporan / kejadian yang masuk","a","",4],["kg","Kegiatan yang dilaksanakan","a","",3],["kt","Keterangan","a","",2]],
+r:function(v){return kop()+jd("LAPORAN HARIAN PIKET","SPKT POLSEK JATIROGO")+info([["Hari / Tanggal",tg(v.tp,1)],["Jam piket",E(v.jm)]])+sec("A. PETUGAS PIKET",v.pt)+sec("B. LAPORAN / KEJADIAN",v.lp)+sec("C. KEGIATAN",v.kg)+sec("D. KETERANGAN",v.kt)+ttd(v)}},
+propam:{t:"Laporan Propam",f:[["no","Nomor","text",""],["kp","Kepada","text","Yth. Kasi Propam Polresta Tuban"],["ph","Perihal","text","Laporan Hasil Pengawasan"],["ds","Dasar","a","",3],["wt","Waktu dan tempat","a","",2],["ur","Uraian hasil pengawasan","a","",5],["tm","Temuan","a","",3],["tl","Saran / tindak lanjut","a","",3]],
+r:function(v){return kop()+jd("LAPORAN",E(v.ph))+info([["Nomor",E(v.no||"...")],["Kepada",E(v.kp)]])+sec("A. DASAR",v.ds)+sec("B. WAKTU DAN TEMPAT",v.wt)+sec("C. URAIAN HASIL PENGAWASAN",v.ur)+sec("D. TEMUAN",v.tm)+sec("E. SARAN / TINDAK LANJUT",v.tl)+'<p>Demikian laporan ini dibuat untuk dipergunakan seperlunya.</p>'+ttd(v)}},
+pers:{t:"Data Personel",nosh:1,f:[["ps","Personel (NAMA | PANGKAT | NRP, satu orang per baris). Tersimpan otomatis di perangkat ini.","a",pers,16]],
+save:function(v){st("pk_pers",v.ps)},
+r:function(v){var R=rows(v.ps),h=kop()+jd("DAFTAR PERSONEL","POLSEK JATIROGO")+'<table class="tb"><thead><tr><th style="width:9mm">No</th><th>Nama</th><th>Pangkat</th><th>NRP</th></tr></thead><tbody>';
+R.forEach(function(a,i){h+='<tr><td class="c">'+(i+1)+'</td><td>'+E(a[0])+'</td><td>'+E(a[1])+'</td><td>'+E(a[2])+'</td></tr>'});return h+'</tbody></table>'}}
+};
+var M=[["kspkt","Pelayanan","&#128196;","KSPKT Kehilangan","Surat keterangan tanda lapor kehilangan","url","https://polsekmyid.vercel.app"],["oh","Pelayanan","&#129485;","Orang Hilang","Laporan orang hilang (di dalam KSPKT)","url","https://polsekmyid.vercel.app"],["lp","Pelayanan","&#128221;","Laporan Polisi"],["sp2hp","Pelayanan","&#128236;","SP2HP"],["dumas","Pelayanan","&#128227;","Pengaduan Masyarakat"],["izin","Pelayanan","&#127914;","Izin Keramaian"],
+["hadir","Administrasi","&#9989;","Daftar Hadir / Absen","Apel, rapat, dan kegiatan","mod"],["nota","Administrasi","&#9993;&#65039;","Nota Dinas / Surat","Surat dinas dengan kop Polsek","mod"],["pers","Administrasi","&#128101;","Data Personel","Daftar personel Polsek","mod"],["agenda","Administrasi","&#128210;","Buku Agenda"],["masuk","Administrasi","&#128229;","Surat Masuk / Keluar"],["jadwal","Administrasi","&#128197;","Jadwal Piket"],
+["piket","Laporan","&#128344;","Laporan Harian Piket","Rekap piket SPKT harian","mod"],["bulan","Laporan","&#128202;","Laporan Bulanan"],["giat","Laporan","&#127939;","Laporan Giat Bhabinkamtibmas"],
+["propam","Pengawasan","&#128737;&#65039;","Laporan Propam","Laporan hasil pengawasan","mod"],["mbg","Pengawasan","&#127857;","Pengawasan Program MBG","Buka aplikasi mbgpropam","ask"],
+["tamu","Lainnya","&#128214;","Buku Tamu"],["inv","Lainnya","&#128230;","Inventaris"]];
+function menus(){var q=$("q").value.toLowerCase(),cs={},h="";M.forEach(function(m){if(q&&(m[3]+" "+(m[4]||"")).toLowerCase().indexOf(q)<0)return;(cs[m[1]]=cs[m[1]]||[]).push(m)});
+Object.keys(cs).forEach(function(c){h+='<div class="cat">'+c+'</div><div class="g">';cs[c].forEach(function(m,i){var ty=m[5]||"soon",d=m[4]||"Segera hadir",a='style="animation-delay:'+(i*.05)+'s"';
+var inner='<i>'+m[2]+'</i><b>'+m[3]+'</b><span>'+d+'</span><em>'+(ty==="soon"?"Segera":ty==="mod"?"Buka":"Tautan")+'</em>';
+if(ty==="url")h+='<a class="t on" '+a+' href="'+m[6]+'" target="_blank" rel="noopener">'+inner+'</a>';
+else h+='<div class="t '+(ty==="soon"?"soon":"on")+'" '+a+' data-id="'+m[0]+'" data-ty="'+ty+'">'+inner+'</div>'});h+='</div>'});
+$("menus").innerHTML=h||'<p style="color:var(--mut)">Menu tidak ditemukan.</p>'}
+$("q").oninput=menus;
+$("menus").onclick=function(ev){var t=ev.target.closest(".t");if(!t||t.tagName==="A")return;var ty=t.getAttribute("data-ty"),id=t.getAttribute("data-id");
+if(ty==="mod")location.hash="#"+id;
+if(ty==="ask"){var u=st("pk_u_"+id);if(!u||ev.shiftKey){u=prompt("Alamat (URL) aplikasi mbgpropam:",u||"https://");if(!u)return;if(!/^https?:\/\//.test(u))u="https://"+u;st("pk_u_"+id,u)}window.open(u,"_blank","noopener")}};
+var cur=null;
+function fld(f){var id="f_"+f[0],d=typeof f[3]==="function"?f[3]():f[3],h='<label for="'+id+'">'+f[1]+'</label>';
+if(f[2]==="a")return h+'<textarea id="'+id+'" rows="'+(f[4]||3)+'">'+E(d)+'</textarea>';
+if(f[2]==="s")return h+'<select id="'+id+'">'+f[4].map(function(o){return'<option'+(o===d?" selected":"")+'>'+o+'</option>'}).join("")+'</select>';
+return h+'<input id="'+id+'" type="'+(f[2]||"text")+'" value="'+E(d)+'">'}
+function val(){var v={};cur.f.concat(cur.nosh?[]:SH).forEach(function(f){v[f[0]]=$("f_"+f[0]).value});return v}
+function rend(){var v=val();$("paper").innerHTML=cur.r(v);if(cur.save)cur.save(v);cur.nosh||["jab","nm","pk"].forEach(function(k){st("pk_"+k,v[k])})}
+function openMod(id){cur=MOD[id];if(!cur)return;var h="";cur.f.forEach(function(f){h+=fld(f)});
+if(cur.btn)h+='<button class="o" id="xb">'+cur.btn[0]+'</button>';
+if(!cur.nosh){h+='<div class="sec">PENANDATANGAN</div>';SH.forEach(function(f){var s=f[0]==="tgl"?null:st("pk_"+f[0]);h+=fld(s?[f[0],f[1],f[2],s]:f)})}
+h+='<div><button class="p" id="pr">Cetak</button><button class="o" id="pd">Unduh PDF</button></div>';
+$("fp").innerHTML=h;$("mt").textContent=cur.t;$("home").hidden=true;$("mod").hidden=false;
+$("fp").oninput=rend;$("fp").onchange=rend;$("pr").onclick=function(){rend();window.print()};$("pd").onclick=pdf;if(cur.btn)$("xb").onclick=cur.btn[1];
+rend();window.scrollTo(0,0)}
+function pdf(){if(!window.html2pdf){alert("Pustaka PDF belum termuat (perlu internet). Gunakan Cetak, lalu pilih Simpan sebagai PDF.");return}
+var el=$("paper");rend();el.classList.add("pm");
+html2pdf().set({margin:[15,16,18,22],filename:cur.t.replace(/[^A-Za-z0-9]+/g,"_")+"_"+today()+".pdf",image:{type:"jpeg",quality:.98},html2canvas:{scale:2,useCORS:true},jsPDF:{unit:"mm",format:[215.9,330],orientation:"portrait"},pagebreak:{mode:["css","legacy"],avoid:"tr"}}).from(el).save().then(function(){el.classList.remove("pm")},function(){el.classList.remove("pm")})}
+function route(){var id=location.hash.slice(1);if(id&&MOD[id])openMod(id);else{$("mod").hidden=true;$("home").hidden=false}}
+window.addEventListener("hashchange",route);
+$("bk").onclick=function(){location.hash=""};
+$("th").onclick=function(){var r=document.documentElement,d=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&window.matchMedia&&matchMedia("(prefers-color-scheme:dark)").matches);r.setAttribute("data-theme",d?"light":"dark");st("pk_th",d?"light":"dark")};
+if(st("pk_th"))document.documentElement.setAttribute("data-theme",st("pk_th"));
+var n=new Date();$("dt").textContent=H[n.getDay()]+", "+n.getDate()+" "+B[n.getMonth()]+" "+n.getFullYear();
+menus();route();
+</script>
+</body>
+</html>
