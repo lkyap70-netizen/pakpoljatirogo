@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PAKPOL - Polsek Jatirogo</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#eaeff8;--card:#fff;--ink:#14213d;--mut:#66728a;--line:#d3dbee;--acc:#f4f7fd;--navy:#0b1f4d;--gold:#f2b705;--blue:#1d3a8a;--fd:Bahnschrift,"DIN Alternate","Arial Narrow",Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1122;--card:#131c33;--ink:#e8eefc;--mut:#98a5c2;--line:#263555;--acc:#18233f}}
@@ -95,84 +94,16 @@ button.busy{opacity:.9;cursor:progress}button.busy:before{content:"";display:inl
 @page{size:215.9mm 330mm;margin:15mm 16mm 18mm 22mm}
 @media print{html,body{background:#fff!important}body:before{display:none}body>*:not(#mod){display:none!important}#mod{padding:0;max-width:none}#mod>.bar,.fp{display:none!important}.mw{display:block}.wrap{overflow:visible}#paper{box-shadow:none;width:auto;min-height:0;padding:0;margin:0}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
-
-/* ===== TAMPILAN BARU (layar saja, cetak tidak berubah) ===== */
-@media screen{
-:root{--bg:#e8ecf3;--line:#d3dae7;--acc:#eff2f8;--mut:#56647d;--gold:#d9a517;--fd:"Barlow Condensed",Bahnschrift,"Arial Narrow",Arial,sans-serif}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#060d1d;--card:#0e1933;--ink:#e9eefb;--mut:#93a1bf;--line:#1f3059;--acc:#142140}}
-:root[data-theme="dark"]{--bg:#060d1d;--card:#0e1933;--ink:#e9eefb;--mut:#93a1bf;--line:#1f3059;--acc:#142140}
-body{font-family:Barlow,"Segoe UI",Arial,sans-serif;background:var(--bg)}
-.t[data-c="SIUM"],.cat[data-c="SIUM"],.uc button[data-u="SIUM"]{--k:#4f7cff}
-.t[data-c="KSPKT"],.cat[data-c="KSPKT"],.uc button[data-u="KSPKT"]{--k:#ff5d5d}
-.t[data-c="RESKRIM"],.cat[data-c="RESKRIM"],.uc button[data-u="RESKRIM"]{--k:#b378ff}
-.t[data-c="INTELKAM"],.cat[data-c="INTELKAM"],.uc button[data-u="INTELKAM"]{--k:#22c1b5}
-.t[data-c="SABHARA"],.cat[data-c="SABHARA"],.uc button[data-u="SABHARA"]{--k:#3fc27a}
-.t[data-c="BINMAS"],.cat[data-c="BINMAS"],.uc button[data-u="BINMAS"]{--k:#f0a82c}
-.t[data-c="PROPAM"],.cat[data-c="PROPAM"],.uc button[data-u="PROPAM"]{--k:#8c9bb8}
-
-header{background:rgba(5,12,30,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);gap:14px;padding:10px 20px}
-header:after{height:3px;bottom:-3px}
-.em{background:none;box-shadow:none;animation:none;border-radius:0;width:auto;height:auto}.em svg{width:32px;height:36px;display:block}
-.b1{font:800 26px var(--fd);letter-spacing:.2em}.b2{font-size:11px;letter-spacing:.08em;opacity:.7}
-header button{width:38px;height:38px;padding:0;border-radius:10px;font-size:16px;background:#ffffff14;transition:background .15s}header button:hover{background:#ffffff2b}
-.hero{border:0;border-bottom:4px solid var(--gold);border-radius:18px;padding:38px 36px 40px;background:radial-gradient(60% 130% at 100% 0,#1d4ed855,transparent 60%),radial-gradient(50% 110% at 0 100%,#d7192038,transparent 60%),linear-gradient(120deg,#050f26,#0a1d4a)}
-.hero:after{content:"";font-size:0;animation:none;right:-10px;top:-24px;width:300px;height:340px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 36'%3E%3Cpath d='M16 1.5 3 6v10c0 9 5.5 15.5 13 19 7.5-3.5 13-10 13-19V6z' fill='none' stroke='%23ffffff' stroke-opacity='.1' stroke-width='.5'/%3E%3C/svg%3E") no-repeat center/contain}
-.hero h1{font:800 clamp(32px,5.5vw,52px)/1.02 var(--fd);letter-spacing:.01em;max-width:18ch;margin:0 0 8px}
-.hero p{font-size:15px;max-width:48ch}
-#chips span{font-size:12.5px;border-radius:8px;background:#ffffff14}
-#q{max-width:460px;padding:13px 16px 13px 44px;border-radius:12px;background:#ffffff1a url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b9c6e6' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E") 14px 50%/20px no-repeat;border:1px solid #ffffff33;color:#fff}
-#q::placeholder{color:#b9c6e6}
-.uc{margin:22px 0 0;gap:8px}
-.uc button{border-radius:999px;border:1px solid var(--line);padding:7px 15px 7px 12px;font:600 14px var(--fd);letter-spacing:.1em;display:inline-flex;align-items:center;gap:8px}
-.uc button:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--k)}
-.cat{display:flex;align-items:center;gap:12px;margin:34px 0 14px;padding:0;border:0;font:700 21px var(--fd);letter-spacing:.14em;color:var(--ink)}
-.cat:before{content:"";width:8px;height:22px;border-radius:3px;background:var(--k,var(--gold))}.cat:after{content:"";flex:1;height:1px;background:var(--line)}
-.g{gap:14px}
-.t{border:1px solid var(--line);border-radius:14px;box-shadow:none;padding:14px 14px 14px 74px;min-height:84px;animation:none;overflow:hidden;transition:transform .15s,border-color .15s,box-shadow .15s}
-.t:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--k,var(--gold))}
-.t i{left:16px;margin-top:-23px;width:46px;height:46px;border-radius:12px;font-size:23px;background:color-mix(in srgb,var(--k) 15%,var(--card));border:1px solid color-mix(in srgb,var(--k) 35%,transparent)}
-.t b{font:700 17px/1.15 var(--fd);letter-spacing:.02em;padding-right:44px}.t span{font-size:12.5px}
-.t:hover{transform:translateY(-2px);border-color:var(--k);box-shadow:0 10px 24px color-mix(in srgb,var(--k) 22%,transparent)}
-.t em{right:10px;top:10px;border-radius:6px;padding:2px 7px;font-size:10.5px}
-.t.on em{background:color-mix(in srgb,var(--k) 16%,transparent);color:var(--ink)}
-.t.soon{background:transparent;border-style:dashed;border-color:var(--line);opacity:.6}.t.soon:before{background:var(--line)}.t.soon i{filter:grayscale(1)}.t.soon:hover{transform:none;box-shadow:none}
-.bar h2{font:700 28px var(--fd);letter-spacing:.03em}
-button.p,button.o{border-radius:10px;padding:10px 16px;font:600 14px Barlow,Arial,sans-serif;transition:filter .15s,background .15s}
-button.p{background:linear-gradient(180deg,#2a52c0,#1d3a8a);border-color:transparent}button.p:hover{filter:brightness(1.12)}button.o:hover{background:var(--acc)}
-.mw{grid-template-columns:minmax(300px,390px) 1fr;gap:22px}
-.fp{border-radius:16px;padding:18px;position:sticky;top:84px;max-height:calc(100vh - 104px);overflow:auto}
-@media(max-width:900px){.fp{position:static;max-height:none}}
-.fp label{font-size:12.5px;font-weight:600;margin:12px 0 4px}
-.fp .sec{background:none;color:var(--mut);border:0;border-top:1px solid var(--line);padding:14px 0 0;margin-top:20px;font:700 14px var(--fd);letter-spacing:.14em}
-.fp input,.fp select,.fp textarea,.lb input{border-radius:10px;padding:9px 11px}
-.fp input:focus,.fp select:focus,.fp textarea:focus,.lb input:focus,#q:focus{outline:2px solid var(--gold);outline-offset:1px}
-.wrap{padding:22px;border-radius:16px;background:var(--acc);border:1px solid var(--line)}
-#paper{box-shadow:0 14px 40px #0a173038}
-.tc{border-radius:16px;padding:6px 10px}
-.at th{background:none;color:var(--mut);font:700 13px var(--fd);letter-spacing:.12em;border-bottom:2px solid var(--gold);padding:10px 8px}
-.at td{padding:11px 8px}.at tbody tr:hover{background:var(--acc)}
-#lg{background:radial-gradient(circle at 1px 1px,#ffffff12 1px,transparent 0) 0 0/26px 26px,#040b1d}
-.lb{background:rgba(10,20,44,.8);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);color:#e9eefb;border:1px solid #ffffff24;border-radius:20px;padding:32px 28px;max-width:390px}
-.lb:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,#d71920 50%,#1d4ed8 50%)}
-.lb .em{width:auto;height:auto;margin:0 auto 12px}.lb .em svg{width:56px;height:63px}
-.lb h1{font-size:42px;letter-spacing:.2em;text-indent:.2em;color:#fff}.lb p,.lb label{color:#9fb0d3}
-.lb input{background:#ffffff12;border-color:#ffffff2a;color:#fff}
-.lb .p{background:linear-gradient(180deg,#f0c23c,#d9a517);color:#1a1300;border:0;padding:12px;font-size:15px}
-.lb .o{color:#c6d3f5;border-color:#ffffff33}.lb .o:hover{background:#ffffff14}
-.lok{background:#0b1630;border-radius:20px}.lok b{color:#fff}
-.to{border-radius:10px}
-@media(max-width:720px){header .b2{display:none}header{padding:9px 14px;gap:10px}.hero{padding:28px 22px 30px}.hero:after{opacity:.6;width:200px}.wrap{padding:10px}}
-}
 </style>
 </head>
 <body class="lock">
-<div id="lg"><div class="lb"><div class="em"><svg viewBox="0 0 32 36" aria-hidden="true"><path d="M16 1.5 3 6v10c0 9 5.5 15.5 13 19 7.5-3.5 13-10 13-19V6z" fill="#0a1730" stroke="#e0b22a" stroke-width="2"/><path d="M16 9l2.1 4.4 4.9.7-3.5 3.4.8 4.8L16 20l-4.3 2.3.8-4.8L9 14.1l4.9-.7z" fill="#e0b22a"/></svg></div><h1>PAKPOL</h1><p>Polsek Jatirogo &middot; Polresta Tuban</p>
+<div id="lg"><div class="lb"><div class="em">&#128737;&#65039;</div><h1>PAKPOL</h1><p>Polsek Jatirogo &middot; Polresta Tuban</p>
 <label>NRP</label><input id="ln" inputmode="numeric" maxlength="10" placeholder="Masukkan NRP" autocomplete="off"><button class="p" id="lgo" type="button">Masuk</button><div id="lm"></div>
 <p style="margin:10px 0 0;font-size:11.5px">Hanya personel yang terdaftar di Data Personel.</p></div></div>
 <div id="sm" hidden><div class="lb" style="text-align:left"><h1 style="font-size:20px;letter-spacing:2px">Sambungan Drive</h1><p>Isi dari Apps Script (Terapkan &gt; Aplikasi web).</p>
 <label>URL Web App</label><input id="su" placeholder="https://script.google.com/macros/s/.../exec"><label>Kode rahasia</label><input id="sk" type="password"><button class="p" id="ss" type="button">Simpan &amp; Sambungkan</button><button class="o" id="sc" type="button" style="width:100%">Tutup</button></div></div>
-<header><div class="em"><svg viewBox="0 0 32 36" aria-hidden="true"><path d="M16 1.5 3 6v10c0 9 5.5 15.5 13 19 7.5-3.5 13-10 13-19V6z" fill="#0a1730" stroke="#e0b22a" stroke-width="2"/><path d="M16 9l2.1 4.4 4.9.7-3.5 3.4.8 4.8L16 20l-4.3 2.3.8-4.8L9 14.1l4.9-.7z" fill="#e0b22a"/></svg></div><div><div class="b1">PAKPOL</div><div class="b2">POLSEK JATIROGO &middot; POLRESTA TUBAN &middot; POLDA JAWA TIMUR</div></div><div class="sp"></div><span id="dt" class="b2"></span><span id="pill" class="pl"></span><span id="us" class="pl"></span><button id="cg" title="Sambungan Drive">&#9881;</button><button id="lo" title="Keluar">&#10162;</button><button id="th" title="Ganti tema">&#9728;</button></header>
-<main id="home"><div class="hero"><h1 id="hh">Selamat bertugas</h1><p>Pilih menu administrasi, laporan, dan pelayanan Polsek di bawah ini.</p><div id="chips"></div><input id="q" type="search" placeholder="Cari menu... (tekan /)" autocomplete="off"></div><div id="menus"></div></main>
+<header><div class="em">&#128737;&#65039;</div><div><div class="b1">PAKPOL</div><div class="b2">POLSEK JATIROGO &middot; POLRESTA TUBAN &middot; POLDA JAWA TIMUR</div></div><div class="sp"></div><span id="dt" class="b2"></span><span id="pill" class="pl"></span><span id="us" class="pl"></span><button id="cg" title="Sambungan Drive">&#9881;</button><button id="lo" title="Keluar">&#10162;</button><button id="th" title="Ganti tema">&#9728;</button></header>
+<main id="home"><div class="hero"><h1 id="hh">Selamat bertugas</h1><p>Pilih menu administrasi, laporan, dan pelayanan Polsek di bawah ini.</p><div id="chips"></div><input id="q" type="search" placeholder="Cari menu..." autocomplete="off"></div><div id="menus"></div></main>
 <section id="ars" hidden style="max-width:1180px;margin:0 auto;padding:22px 16px"><div class="bar"><button class="o" id="bk2">&larr; Menu</button><h2>Arsip Dokumen</h2></div><div class="tc"><table class="at"><thead><tr><th>Jenis</th><th>Judul</th><th>Tanggal</th><th>Operator</th><th>PDF</th><th>Aksi</th></tr></thead><tbody id="ab"></tbody></table></div></section>
 <section id="mod" hidden><div class="bar"><button class="o" id="bk">&larr; Menu</button><h2 id="mt"></h2></div><div class="mw"><div class="fp" id="fp"></div><div class="wrap"><div id="paper"></div></div></div></section>
 <script>
@@ -233,7 +164,7 @@ function menus(){var q=$("q").value.toLowerCase(),cs={},h="";M.forEach(function(
 if(!q)h+='<div class="uc">'+Object.keys(cs).map(function(c){return'<button data-u="'+c+'">'+c+'</button>'}).join("")+'</div>';
 Object.keys(cs).forEach(function(c){h+='<div class="cat" data-c="'+c+'">'+c+'</div><div class="g">';cs[c].forEach(function(m,i){var ty=m[5]||"soon",d=m[4]||"Segera hadir",a='style="animation-delay:'+(i*.05)+'s"';
 var inner='<i>'+m[2]+'</i><b>'+m[3]+'</b><span>'+d+'</span><em>'+(ty==="soon"?"Segera":ty==="mod"?"Buka":"Tautan")+'</em>';
-if(ty==="url")h+='<a class="t on" '+a+' data-c="'+c+'" href="'+m[6]+'" target="_blank" rel="noopener">'+inner+'</a>';else h+='<div class="t '+(ty==="soon"?"soon":"on")+'" '+a+' data-c="'+c+'" data-id="'+m[0]+'" data-ty="'+ty+'">'+inner+'</div>'});h+='</div>'});
+if(ty==="url")h+='<a class="t on" '+a+' href="'+m[6]+'" target="_blank" rel="noopener">'+inner+'</a>';else h+='<div class="t '+(ty==="soon"?"soon":"on")+'" '+a+' data-id="'+m[0]+'" data-ty="'+ty+'">'+inner+'</div>'});h+='</div>'});
 $("menus").innerHTML=h||'<p style="color:var(--mut)">Menu tidak ditemukan.</p>'}
 $("q").oninput=menus;
 $("menus").onclick=function(ev){var u=ev.target.closest("[data-u]");if(u){var c=document.querySelector('.cat[data-c="'+u.getAttribute("data-u")+'"]');if(c)c.scrollIntoView({behavior:"smooth",block:"start"});return}var t=ev.target.closest(".t");if(!t||t.tagName==="A")return;var ty=t.getAttribute("data-ty"),id=t.getAttribute("data-id");
@@ -316,7 +247,6 @@ st("pk_url",u);st("pk_tok",k);$("sm").hidden=true;sync().then(function(){toast("
 window.addEventListener("online",function(){sync()});window.addEventListener("offline",function(){pill()});
 function initAuth(){pill();chips();if(dv())sync();var s=null;try{s=JSON.parse(st("pk_ses")||"null")}catch(x){}
 if(s&&s.e>Date.now()){var u=fu(s.r);if(u){enter(u);return}}}
-document.addEventListener("keydown",function(ev){if(ev.key==="/"&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)&&!$("home").hidden&&!document.body.classList.contains("lock")){ev.preventDefault();$("q").focus()}});
 route();initAuth();
 </script>
 </body>
