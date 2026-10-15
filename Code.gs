@@ -14,7 +14,7 @@
  *    bersama kode rahasia yang sama.
  * Setiap mengubah kode: Terapkan > Kelola penerapan > pensil > Versi baru > Terapkan.
  */
-var TOKEN = 'GANTI_DENGAN_KODE_RAHASIA';
+var TOKEN = 'polsek2026';
 var FOLDER_NAME = 'PAKPOL Polsek Jatirogo';
 var DB_NAME = 'PAKPOL (Database)';
 var HEAD = ['id', 'Jenis', 'Judul', 'Tanggal', 'Operator', 'Link PDF', 'Disimpan', 'Data (JSON)'];
